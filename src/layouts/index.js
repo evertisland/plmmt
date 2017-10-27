@@ -1,60 +1,43 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
-
+import styled from 'styled-components'
+import ui from './theme'
+import Header from '../components/Header'
 import './index.css'
 
-const Header = () => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          Gatsby
-        </Link>
-      </h1>
-    </div>
-  </div>
-)
-
+const Border = styled.div`
+  position: fixed;
+  background: ${ui.color.contentDark};  
+  width: ${props => (props.left || props.right) ? ui.component.body.margin : 'auto'};
+  height: ${props => (props.top || props.bottom) ? ui.component.body.margin : 'auto'};
+  top: ${props => (props.left || props.right || props.top) ? '0' : 'auto'};
+  bottom: ${props => (props.left || props.right || props.bottom) ? '0' : 'auto'};
+  left: ${props => (props.left || props.top || props.bottom) ? '0' : 'auto'};
+  right: ${props => (props.right || props.bottom || props.top) ? '0' : 'auto'};
+`
+const LayoutContainer = styled.div`
+  margin: ${ui.component.body.margin};
+  padding-top: ${ui.component.header.height};
+  width: 100%;
+  display: flex;
+`
 const TemplateWrapper = ({ children }) => (
-  <div>
+  <LayoutContainer>
+    <Border top />
+    <Border right />
+    <Border bottom />
+    <Border left/>
     <Helmet
-      title="Gatsby Default Starter"
+      title="Paul Emmet"
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
     <Header />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-      }}
-    >
-      {children()}
-    </div>
-  </div>
+		{children()}
+  </LayoutContainer>
 )
 
 TemplateWrapper.propTypes = {
