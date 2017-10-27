@@ -1,24 +1,24 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import styled from 'styled-components'
 import ui from '../layouts/theme'
-import backgroundImage from '../../static/images/dogs.jpg'
-
+import backgroundImage from '../../static/images/rust.jpg'
 const Title = styled.h1`
-  color: ${ui.color.background};
+  background: ${ui.color.accent};
+  padding: ${ui.size.s};
+  
 `
-
-const IndexPage = ({ className }) => (
+const ContactPage = ({ className }) => (
   <div className={className}>
-    <Title>Homes</Title>
+    <Title>Get in touch</Title>
   </div>
 )
 
-export default styled(IndexPage)`
+export default styled(ContactPage)`
   height: 100%;
   width: 100%;
   flex: 1;
   display: flex;
+  flex-direction: column;
   background-image: url(${backgroundImage});
   background-size: cover;
   background-position: center;
