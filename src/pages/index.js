@@ -3,13 +3,9 @@ import styled from 'styled-components'
 import ui from '../layouts/theme'
 import backgroundImage from '../../static/images/dogs.jpg'
 
-const Title = styled.h1`
-  color: ${ui.color.background};
-`
-
 const IndexPage = ({ className }) => (
   <div className={className}>
-    <Title>Homes</Title>
+    <h1>Home page</h1>
   </div>
 )
 
