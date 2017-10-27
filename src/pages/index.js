@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import ui from '../layouts/theme'
-import backgroundImage from '../../static/images/dogs.jpg'
+import backgroundImage from './dogs.jpg'
 
 // const Container = styled.div`
 //   height: 100%;
@@ -29,6 +29,7 @@ export default styled(IndexPage)`
   display: flex;
   background-size: cover;
   background-position: center;
+  background-image: url(${backgroundImage});
   padding: ${ui.size.s};
   h1 {
     color: ${ui.color.background};
