@@ -17,16 +17,18 @@ import ui from '../layouts/theme'
 //   }
 // `
 
-const Container = styled.div`
+const IndexPage = ({ className }) => (
+  <div className={className}>
+    <h1>Homes</h1>
+  </div>
+)
+export default styled(IndexPage)`
+  height: 100%;
+  width: 100%;
+  flex: 1;
+  display: flex;
   padding: ${ui.size.s};
 `
-
-const IndexPage = () => (
-  <Container>
-    <h1>Homes</h1>
-  </Container>
-)
-export default IndexPage
 
 // import React from 'react'
 //
