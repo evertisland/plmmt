@@ -27,15 +27,10 @@ export default styled(IndexPage)`
   width: 100%;
   flex: 1;
   display: flex;
+  background-size: cover;
+  background-position: center;
   padding: ${ui.size.s};
+  h1 {
+    color: ${ui.color.background};
+  }
 `
-
-// import React from 'react'
-//
-// const IndexPage = () => (
-//   <div>
-//     <h1>Homes</h1>
-//   </div>
-// )
-//
-// export default IndexPage
