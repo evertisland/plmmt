@@ -1,5 +1,5 @@
 import React from 'react'
-//import styled from 'styled-components'
+import styled from 'styled-components'
 //import ui from '../layouts/theme'
 //import backgroundImage from '../../static/images/dogs.jpg'
 
@@ -17,10 +17,14 @@ import React from 'react'
 //   }
 // `
 
+const Container = styled.div`
+  padding: 10px;
+`
+
 const IndexPage = () => (
-  <div>
+  <Container>
     <h1>Homes</h1>
-  </div>
+  </Container>
 )
 export default IndexPage
 
