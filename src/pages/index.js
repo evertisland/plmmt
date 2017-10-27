@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-//import ui from '../layouts/theme'
+import ui from '../layouts/theme'
 //import backgroundImage from '../../static/images/dogs.jpg'
 
 // const Container = styled.div`
@@ -18,7 +18,7 @@ import styled from 'styled-components'
 // `
 
 const Container = styled.div`
-  padding: 10px;
+  padding: ${ui.size.s};
 `
 
 const IndexPage = () => (

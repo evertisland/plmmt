@@ -17,11 +17,6 @@ const size = {
 	xxl: '3.998rem'
 }
 
-
-const image = {
-	background: 'url("../../uploads/dogs.jpg")'
-}
-
 const font = {
 	family: '"Lato", sans-serif'
 }
@@ -40,7 +35,6 @@ export default {
 	color,
 	size,
 	font,
-	image,
 	component
 }
 
