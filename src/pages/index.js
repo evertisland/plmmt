@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import ui from '../layouts/theme'
-import backgroundImage from '../../static/images/dogs.jpg'
+//import ui from '../layouts/theme'
+//import backgroundImage from '../../static/images/dogs.jpg'
 
 const IndexPage = ({ className }) => (
   <div className={className}>
@@ -14,8 +14,8 @@ export default styled(IndexPage)`
   width: 100%;
   flex: 1;
   display: flex;
-  background-image: url(${backgroundImage});
+  //background-image: url(${backgroundImage});
   background-size: cover;
   background-position: center;
-  padding: ${ui.size.s};
+  //padding: ${ui.size.s};
 `
