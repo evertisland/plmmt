@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import ui from '../layouts/theme'
-//import backgroundImage from '../../static/images/dogs.jpg'
+import backgroundImage from '../../static/images/dogs.jpg'
 
 // const Container = styled.div`
 //   height: 100%;
